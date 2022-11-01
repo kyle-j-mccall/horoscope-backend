@@ -13,9 +13,8 @@ describe('zodiac routes', () => {
   });
 
   it('/zodiac/:id should return zodiac details', async () => {
-    console.log('hello?');
     const res = await request(app).get('/zodiacs/1');
-    console.log(res);
+
     const aquarius = {
       id: '1',
       name: 'aquarius',
