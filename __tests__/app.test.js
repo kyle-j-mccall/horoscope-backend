@@ -29,7 +29,8 @@ describe('zodiac routes', () => {
 
     const leo = {
       sign: 'leo',
-      horoscope: 'the coolest',
+      date: expect.any(String),
+      horoscope: expect.any(String),
     };
     expect(res.body).toEqual(leo);
   });
